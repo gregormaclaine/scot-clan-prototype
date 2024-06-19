@@ -1,0 +1,52 @@
+.navbar-crest {
+  float: left;
+  height: 40px;
+  margin-right: 0.2em;
+}
+
+.message {
+  margin: 0.5em auto;
+  padding: 0.5em 1em;
+  background-color: #eee;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.message .header {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.message .header img {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+
+.message .header p:nth-child(2) {
+  font-weight: bold;
+}
+
+.message .header p b {
+  color: orangered;
+}
+
+.message .header p b.blue {
+  color: blue;
+}
+
+.message .header span:not(.report) {
+  padding: 3px 8px;
+  background-color: #ffa500;
+  border-radius: 5px;
+  border: 1px solid #ee8500;
+  font-weight: bold;
+  color: #451200;
+}
+
+.message .header span.report {
+  color: red;
+  cursor: pointer;
+  margin-right: 1em;
+}
