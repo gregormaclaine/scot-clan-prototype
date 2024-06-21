@@ -57,3 +57,117 @@
     display: none;
   }
 }
+
+main {
+  margin-top: 56px;
+}
+
+main a {
+  text-decoration: none;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+main a:hover *:not(i) {
+  text-decoration: underline;
+}
+
+main a i {
+  margin-bottom: 1px;
+}
+
+main div {
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 4em;
+  gap: 2em;
+}
+
+main aside {
+  min-width: 30vw;
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+main aside .aside-crest {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+main aside img {
+  height: 15em;
+}
+
+main aside h1 {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+main aside h1 span {
+  font-size: 1.8em;
+}
+
+main aside .company-name {
+  font-style: italic;
+  color: blueviolet;
+  display: block;
+}
+
+main aside .clan {
+  font-weight: bold;
+  color: goldenrod;
+  display: block;
+}
+
+main aside h2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+main section pre {
+  white-space: normal;
+}
+
+main aside button {
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+main aside button:hover {
+  background-color: #eee;
+}
+
+@media only screen and (max-width: 600px) {
+  main div {
+    flex-direction: column;
+  }
+}
+
+div.invalid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  text-align: center;
+}
+
+div.invalid h1 {
+  font-weight: bold;
+  color: red;
+}
+
+div.invalid p {
+  margin: 0;
+  max-width: 70em;
+  font-size: 1.2em;
+}
