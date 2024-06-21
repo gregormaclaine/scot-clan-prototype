@@ -152,13 +152,19 @@ main aside button:hover {
 }
 
 div.invalid {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
   flex-direction: column;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   text-align: center;
+}
+
+div.invalid img {
+  max-width: 60em;
+  width: 40vw;
 }
 
 div.invalid h1 {
