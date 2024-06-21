@@ -43,10 +43,17 @@
   border: 1px solid #ee8500;
   font-weight: bold;
   color: #451200;
+  text-align: center;
 }
 
 .message .header span.report {
   color: red;
   cursor: pointer;
   margin-right: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .message .header span {
+    display: none;
+  }
 }
